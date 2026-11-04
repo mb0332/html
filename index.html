@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автоматизация Excel и PDF | Нижнекамск, Челны</title>
+    
+    <!-- SEO Метатеги -->
+    <meta name="description" content="Разработка алгоритмов для инженеров, сметчиков и проектировщиков в Нижнекамске. Перенос из PDF в Excel, автоматизация актов, ГПР и отчетов.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://w3.org viewBox=%220%22 width=%2232%22 height=%2232%22><text y=%2226%22 font-size=%2226%22>📊</text></svg>">
+
+    <style>
+        /* Общие стили и сброс отступов */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #ffffff;
+            color: #31333F;
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Главный экран (Оффер) */
+        header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        h1 {
+            font-size: 2.2rem;
+            color: #111;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+        }
+        h3 {
+            font-size: 1.3rem;
+            color: #666;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+        }
+        .lead-text {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Кнопки связи */
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 180px;
+            height: 52px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            border-radius: 8px;
+            border: 1px solid #d6d6d8;
+            background-color: #ffffff;
+            color: #31333F;
+            transition: background-color 0.2s, border-color 0.2s;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #f9f9fa;
+            border-color: #a3a3a3;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #e6e6e6;
+            margin: 2.5rem 0;
+        }
+
+        /* Блок услуг (Гриды) */
+        h2 {
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+        }
+        .service-card h4 {
+            font-size: 1.15rem;
+            margin-bottom: 0.5rem;
+            color: #111;
+        }
+        .service-card p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+
+        /* Информационные плашки (Аналоги st.info и st.warning) */
+        .alert {
+            padding: 1rem 1.25rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+        .alert-info {
+            background-color: #e8f4f8;
+            border-left: 5px solid #29b6f6;
+            color: #1d657e;
+        }
+        .alert-warning {
+            background-color: #fff8e1;
+            border-left: 5px solid #ffca28;
+            color: #826200;
+        }
+        .alert-warning b, .alert-warning strong {
+            color: #000;
+        }
+
+        /* Контакты */
+        .contacts-list {
+            list-style: none;
+            margin-top: 1rem;
+        }
+        .contacts-list li {
+            margin-bottom: 0.5rem;
+            font-size: 1.05rem;
+        }
+        .contacts-list a {
+            color: #ff4b4b;
+            text-decoration: none;
+        }
+        .contacts-list a:hover {
+            text-decoration: underline;
+        }
+
+        /* Скрытые SEO теги */
+        .seo-hidden {
+            display: none;
+        }
+
+        /* Мобильная адаптивность */
+        @media (max-width: 600px) {
+            h1 { font-size: 1.8rem; }
+            h3 { font-size: 1.1rem; }
+            .btn { max-width: 100%; }
+            .button-group { flex-direction: column; width: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- ==========================================================
+         🚀 1. ГЛАВНЫЙ ЭКРАН (ОФФЕР)
+         ========================================================== -->
+    <header>
+        <h1>Автоматизация и разработка макросов в Excel</h1>
+        <h3>Нижнекамск / Набережные Челны / Удаленно</h3>
+        <div class="lead-text">
+            Ускоряю рутинную работу инженеров, проектировщиков и сметчиков <b>в 5 раз</b> с помощью умных алгоритмов Python и Excel.<br>
+            <i>Без расширения штата и переплат.</i>
+        </div>
+    </header>
+
+    <!-- Кнопки связи -->
+    <div class="button-group">
+        <a href="tel:+79375990332" class="btn">📞 Позвонить</a>
+        <a href="https://t.me" target="_blank" class="btn">💬 Telegram</a>
+        <a href="https://max.ru" target="_blank" class="btn">💻 Макс</a>
+    </div>
+
+    <hr>
+
+    <!-- ==========================================================
+         🛠️ 2. БЛОК «ЧТО Я ДЕЛАЮ» (УСЛУГИ)
+         ========================================================== -->
+    <section>
+        <h2>🛠️ Чем я могу помочь вашему бизнесу</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <h4>📄 Из PDF в Excel</h4>
+                <p>Мгновенный автоматический перенос спецификаций, чертежей ТХ/КМ и физобъемов в редактируемые таблицы за пару минут.</p>
+            </div>
+            <div class="service-card">
+                <h4>⚙️ Умные макросы</h4>
+                <p>Автозаполнение актов, ведомостей, общих журналов работ и форм отчетности в один клик без опечаток.</p>
+            </div>
+            <div class="service-card">
+                <h4>📊 Связка данных</h4>
+                <p>Автоматическое построение графиков производства работ (ГПР), лимитно-заборных карт и сверка объемов (Проект / Смета / Факт).</p>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- ==========================================================
+         👷 3. БЛОК ДОВЕРИЯ
+         ========================================================== -->
+    <section>
+        <h2>👷 Почему именно я?</h2>
+        <div class="alert alert-info">
+            Вам не придется писать длинные инструкции для программиста. Я сам работаю инженером в Нижнекамске и знаю изнанку этой профессии. Я сразу понимаю, где в таблицах возникают затыки, поэтому мы быстро найдем общее решение без лишней бюрократии.
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- ==========================================================
+         🔥 4. ПРИЗЫВ К ДЕЙСТВИЮ И ТЕСТ-ДРАЙВ
+         ========================================================== -->
+    <section>
+        <h2>🔥 Бесплатный тест-драйв</h2>
+        <div class="alert alert-warning">
+            У вас есть сложная таблица или горящий объект? <strong>Пришлите тестовый PDF-файл (до 5 страниц) мне в ЛС.</strong> 
+            Я бесплатно перенесу его в Excel, чтобы вы оценили скорость и качество работы алгоритма еще до оплаты!
+        </div>
+
+        <h3 style="text-align: left; margin: 1.5rem 0 0.5rem 0; color: #111; font-weight: 600;">📱 Контакты для связи:</h3>
+        <ul class="contacts-list">
+            <li><strong>Телефон:</strong> +7 937 599 0332</li>
+            <li><strong>Email:</strong> <a href="mailto:mb0332@yandex.ru">mb0332@yandex.ru</a></li>
+            <li><strong>Telegram / Макс / WhatsApp:</strong> по номеру телефона или кнопкам выше.</li>
+        </ul>
+    </section>
+
+    <!-- ==========================================================
+         🔍 5. ТЕГИ И КЛЮЧЕВЫЕ СЛОВА ДЛЯ ПОИСКОВИКОВ (SEO) — СКРЫТЫЕ
+         ========================================================== -->
+    <div class="seo-hidden">
+        #автоматизация_excel #макросы_на_заказ #заказать_макрос #из_pdf_в_excel #vba_скрипты #python_скрипты 
+        #парсинг_pdf #конвертация_таблиц #связка_данных #сверка_объемов #автозаполнение_актов #составление_гпр 
+        #анализ_данных_эксель #шаблоны_excel #написание_макросов #ускорение_расчетов
+        #инженер_опп #инженер_пто #для_сметчиков #для_проектировщиков #расчет_физобъемов #строительный_контроль 
+        #аналитика_для_бизнеса #учет_материалов #лимитно_заборная_карта #автоматизация_производства
+        #microsoft_excel #vba #python #pandas #openpyxl #pdfplumber #excel_macros #макросы_vba
+        #нижнекамск #набережные_челны #татарстан #казань #альметьевск #удаленно #фриланс_эксель
+    </div>
+
+</div>
+
+<!-- ==========================================================
+     📈 ПОЛНОЦЕННЫЙ СЧЕТЧИК ЯНДЕКС МЕТРИКИ (ДЛЯ СТАТИЧНОГО HTML)
+     ========================================================== -->
+<!-- Замените 00000000 на ваш реальный номер счетчика Метрики -->
+<script type="text/javascript" >
+   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+   m[i].l=1*new Date();
+   for (var j = 0; j < e.length; j++) {if (e[j].n === r) { return; }}
+   k=e.createElement(t),a=e.getElementsByTagName(t),k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+   (window, document, "script", "https://yandex.ru", "ym");
+
+   ym(00000000, "init", {
+        clickmap:true,
+        trackLinks:true,
+        accurateTrackBounce:true,
+        webvisor:true
+   });
+</script>
+<noscript><div><img src="https://yandex.ru" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+
+</body>
+</html>
